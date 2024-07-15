@@ -1,0 +1,10 @@
+div {
+    height: 200px;
+    width: 400px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image: url("image.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
