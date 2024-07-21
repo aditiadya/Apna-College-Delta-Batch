@@ -1,0 +1,11 @@
+.Product{
+    border: 1px solid grey;
+    border-radius: 24px;
+    margin-bottom: 15px;
+    padding: 0 10px 0 10px;
+    transition: border-color 0.25s;
+}
+
+.Product:hover {
+    border: 1px solid #646cff;
+}
