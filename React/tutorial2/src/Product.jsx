@@ -1,12 +1,19 @@
 import "./Product.css"
 
-function Product() {
+export default function Product({ title, price, features }) {
+    let isDiscount=price>=60000;
+    let styles={backgroundColor: isDiscount ? "#111112" : ""}
     return (
-        <div className="Product">
-            <h3>Product Title</h3>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ullam iure quaerat iusto facere aliquam saepe modi? Iusto ullam reprehenderit reiciendis ratione neque ut laboriosam, accusantium veniam voluptas delectus odit!</h5>
+        <div className="Product" style={styles}>
+            <h3>{title}</h3>
+            <h5>Price : ₹ {price}</h5>
+            <p>
+                {features.map((feature) => (
+                    <li>{feature}</li>
+                ))}
+            </p>
+            {isDiscount ? <p>Discount of 5%</p>: <button className="button">Get Discount</button>}
+            {/* {price>=50000 && <p>Discount of 5%</p>} */}
         </div>
     )
 }
-
-export default Product;
