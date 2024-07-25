@@ -1,0 +1,17 @@
+.Product{
+    border: 1px solid grey;
+    border-radius: 24px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    width: 280px;
+    height: 187px;
+    transition: border-color 0.25s;
+}
+
+.Product:hover {
+    border: 1px solid #646cff;
+}
+
+.button:hover{
+    background-color: #646cff;
+}
