@@ -1,0 +1,17 @@
+#REST = Representational State Transfer
+    Rest is an architectural style that defines a set of constraints to be used for creating web services.
+
+#CRUD (create, read, update, delete) Operations has some http requests :
+    1--> GET = retrieves resources
+    2--> POST = submits new data to the server
+    3--> PUT = updates existing data
+    4--> PATCH = update existing data partially
+    5--> DELETE = removes data
+
+#Creating RESTful APIs
+    GET : /posts => to get data for all posts       (INDEX (main))
+    POST : /posts => to add a new post      (CREATE)
+    GET : /posts/:id => to get one post         (using id) (VIEW)
+    PATCH : /posts/:id => to update specific post       (UPDATE)
+    DELETE : /posts/:id => to delete specific post      (DESTROY)
+
