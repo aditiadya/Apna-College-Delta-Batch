@@ -39,11 +39,18 @@ app.post("/", (req, res) => {
     res.send("you sent a post request to root");
 });
 
+
+//as we know that we can't write code for each page, so instead we define a variable which will be used to get data.
 app.get("/:username/:id", (req, res) => {
+    //this function can be used for any request which has some username and id
+    //http://localhost:3000/aditiadya/123
+    //or
+    //http://localhost:3000/apnacollege/456789
     let {username, id} = req.params;
     res.send(`Welcome to the page of @${username}`)
 })
 
+//http://localhost:3000/search?q=apple
 app.get("/search", (req, res) => {
     console.log(req.query);
     let {q} = req.query;
