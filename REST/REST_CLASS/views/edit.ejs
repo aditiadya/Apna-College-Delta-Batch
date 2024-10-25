@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+</head>
+<body>
+    <h2>Edit your post</h2>
+    <br>
+    <p>Post id: <%= post.id %></p>
+    <p>Post username: @<%= post.username %></p>
+    <br>
+    <!-- by default, form can have only 2 methods and those are get and post. but when we want to work with other methods like patch, delete, put, then we use the npm package called method--override. with the help of this we override the existing get or post request to patch, delete or put request. -->
+    <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+        <textarea name="content" rows="10" cols="35"><%= post.content %></textarea>
+        <br> <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
