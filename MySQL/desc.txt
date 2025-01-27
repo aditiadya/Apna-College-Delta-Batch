@@ -1,0 +1,11 @@
+# What is a Database?
+    It is a collection of data in a format that can be easily accessed.
+
+# Why databases?
+    1--> can store large data
+    2--> features like security, scalability etc.
+    3--> easier to insert, update or delete data
+
+# What is SQL?
+    SQL is a programming language used to interact with relational databases.
+
